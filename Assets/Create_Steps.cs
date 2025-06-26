@@ -11,6 +11,7 @@ public class Create_Steps : MonoBehaviour
     public float stepLenght = 1f; // Довжина сходинки
     private void Start()
     {
+
         for (int i = 0; i < stepNum + 1; i++)
         {
             Instantiate(
