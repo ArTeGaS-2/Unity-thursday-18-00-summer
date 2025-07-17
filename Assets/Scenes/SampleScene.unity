@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.000017033923, g: 0.000000025772884, b: 0, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414727, b: 0.121078536, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -134,7 +134,7 @@ GameObject:
   - component: {fileID: 205133574}
   - component: {fileID: 205133576}
   - component: {fileID: 205133575}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Directional Light
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -253,7 +253,7 @@ GameObject:
   - component: {fileID: 238908556}
   - component: {fileID: 238908555}
   - component: {fileID: 238908554}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -359,7 +359,7 @@ GameObject:
   - component: {fileID: 239472921}
   - component: {fileID: 239472920}
   - component: {fileID: 239472919}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,7 +465,7 @@ GameObject:
   - component: {fileID: 298139247}
   - component: {fileID: 298139246}
   - component: {fileID: 298139245}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -570,7 +570,7 @@ GameObject:
   - component: {fileID: 330585545}
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -708,7 +708,7 @@ GameObject:
   - component: {fileID: 370259634}
   - component: {fileID: 370259633}
   - component: {fileID: 370259632}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -813,7 +813,7 @@ GameObject:
   - component: {fileID: 381238285}
   - component: {fileID: 381238284}
   - component: {fileID: 381238283}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -995,13 +995,13 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 410087039}
   serializedVersion: 2
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &410087042
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1034,7 +1034,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 411582612}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Zero_Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1098,7 +1098,7 @@ GameObject:
   - component: {fileID: 444563374}
   - component: {fileID: 444563373}
   - component: {fileID: 444563372}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (9)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1203,7 +1203,7 @@ GameObject:
   - component: {fileID: 467395470}
   - component: {fileID: 467395469}
   - component: {fileID: 467395468}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1308,7 +1308,7 @@ GameObject:
   - component: {fileID: 493452688}
   - component: {fileID: 493452687}
   - component: {fileID: 493452686}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1413,7 +1413,7 @@ GameObject:
   - component: {fileID: 644630164}
   - component: {fileID: 644630163}
   - component: {fileID: 644630162}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (12)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1518,7 +1518,7 @@ GameObject:
   - component: {fileID: 675895670}
   - component: {fileID: 675895669}
   - component: {fileID: 675895668}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1624,7 +1624,7 @@ GameObject:
   - component: {fileID: 685710265}
   - component: {fileID: 685710264}
   - component: {fileID: 685710263}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1730,7 +1730,7 @@ GameObject:
   - component: {fileID: 719103573}
   - component: {fileID: 719103571}
   - component: {fileID: 719103570}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1858,7 +1858,7 @@ GameObject:
   - component: {fileID: 748901201}
   - component: {fileID: 748901200}
   - component: {fileID: 748901199}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2012,7 +2012,7 @@ GameObject:
   - component: {fileID: 1000436649}
   - component: {fileID: 1000436648}
   - component: {fileID: 1000436647}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (5)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2105,6 +2105,60 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1000436645}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1049354661
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1049354663}
+  - component: {fileID: 1049354662}
+  m_Layer: 0
+  m_Name: LevelGenerator
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1049354662
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049354661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7edc89a4957aa44ab23e9351def2364, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zeroLevel: {fileID: 411582611}
+  levelPrefab: {fileID: 8578563156164243331, guid: 6b4f27c078b60c24388cbc1991a1bef5,
+    type: 3}
+  levelNum: 0
+  levelHeightStep: 14
+  zeroLevelWalls: {fileID: 411582611}
+  levelWallsPrefab: {fileID: 8361757617462399858, guid: b073692f5a614b644b486454bf0f12fd,
+    type: 3}
+  wallsHeightStep: 7
+  levelsNumToGenerate: 10
+--- !u!4 &1049354663
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049354661}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1107591511
 GameObject:
   m_ObjectHideFlags: 0
@@ -2117,7 +2171,7 @@ GameObject:
   - component: {fileID: 1107591515}
   - component: {fileID: 1107591514}
   - component: {fileID: 1107591513}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2223,7 +2277,7 @@ GameObject:
   - component: {fileID: 1250947036}
   - component: {fileID: 1250947035}
   - component: {fileID: 1250947034}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2328,7 +2382,7 @@ GameObject:
   - component: {fileID: 1279781745}
   - component: {fileID: 1279781744}
   - component: {fileID: 1279781743}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2433,7 +2487,7 @@ GameObject:
   - component: {fileID: 1310817049}
   - component: {fileID: 1310817048}
   - component: {fileID: 1310817047}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2539,7 +2593,7 @@ GameObject:
   - component: {fileID: 1321406770}
   - component: {fileID: 1321406769}
   - component: {fileID: 1321406768}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2644,7 +2698,7 @@ GameObject:
   - component: {fileID: 1385353305}
   - component: {fileID: 1385353304}
   - component: {fileID: 1385353303}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2749,7 +2803,7 @@ GameObject:
   - component: {fileID: 1425443254}
   - component: {fileID: 1425443253}
   - component: {fileID: 1425443252}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2854,7 +2908,7 @@ GameObject:
   - component: {fileID: 1522713980}
   - component: {fileID: 1522713979}
   - component: {fileID: 1522713978}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (6)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2959,7 +3013,7 @@ GameObject:
   - component: {fileID: 1583604407}
   - component: {fileID: 1583604406}
   - component: {fileID: 1583604405}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (8)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3064,7 +3118,7 @@ GameObject:
   - component: {fileID: 1694167767}
   - component: {fileID: 1694167766}
   - component: {fileID: 1694167765}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (2)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3169,7 +3223,7 @@ GameObject:
   - component: {fileID: 1789919639}
   - component: {fileID: 1789919638}
   - component: {fileID: 1789919637}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3274,7 +3328,7 @@ GameObject:
   - component: {fileID: 1806120844}
   - component: {fileID: 1806120843}
   - component: {fileID: 1806120842}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (7)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3379,7 +3433,7 @@ GameObject:
   - component: {fileID: 1933938657}
   - component: {fileID: 1933938656}
   - component: {fileID: 1933938655}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Wall (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3485,7 +3539,7 @@ GameObject:
   - component: {fileID: 2056681500}
   - component: {fileID: 2056681499}
   - component: {fileID: 2056681498}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (4)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3590,7 +3644,7 @@ GameObject:
   - component: {fileID: 2068403123}
   - component: {fileID: 2068403122}
   - component: {fileID: 2068403121}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Step(Clone) (10)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3695,7 +3749,7 @@ GameObject:
   - component: {fileID: 2096342156}
   - component: {fileID: 2096342155}
   - component: {fileID: 2096342154}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Floor
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3851,6 +3905,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Level_Prefab
       objectReference: {fileID: 0}
+    - target: {fileID: 8578563156164243331, guid: 6b4f27c078b60c24388cbc1991a1bef5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3993,6 +4052,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Step
       objectReference: {fileID: 0}
+    - target: {fileID: 7160661660885319122, guid: cc0333c630ffb814f830b994a2319695,
+        type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     - target: {fileID: 8071352978742721474, guid: cc0333c630ffb814f830b994a2319695,
         type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -4013,3 +4077,4 @@ SceneRoots:
   - {fileID: 2287216917829179934}
   - {fileID: 719103575}
   - {fileID: 7571465934453195373}
+  - {fileID: 1049354663}

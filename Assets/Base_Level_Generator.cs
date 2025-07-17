@@ -19,8 +19,9 @@ public class Base_Level_Generator : MonoBehaviour
     {
         for (int i = 0; i < levelsNumToGenerate + 1; i++)
         {
+            levelNum--;
             Instantiate(levelPrefab,
-                zeroLevel.transform.position + new Vector3(
+                new Vector3(0,7,0) + new Vector3(
                     0, levelNum * levelHeightStep,0),
                 Quaternion.identity);
         }
