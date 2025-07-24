@@ -12,6 +12,7 @@ public class Base_Level_Generator : MonoBehaviour
     [Header("Налаштування Стін")]
     public GameObject zeroLevelWalls; // Перший шар стін
     public GameObject levelWallsPrefab; // Шаблон стін
+    public int wallNum; // Кількість стін
     public float wallsHeightStep = 7f; // Крок між стінами
     [Header("Інше")]
     public int levelsNumToGenerate = 10; // Кількість рівнів
@@ -24,6 +25,15 @@ public class Base_Level_Generator : MonoBehaviour
                 new Vector3(0,7,0) + new Vector3(
                     0, levelNum * levelHeightStep,0),
                 Quaternion.identity);
+        }
+        for (int i = 0; i < (levelsNumToGenerate + 1) * 2; i++)
+        {
+            wallNum--;
+            Instantiate(levelWallsPrefab,
+              new Vector3(0, 7, 0) + new Vector3(
+                  0, wallNum * wallsHeightStep, 0),
+              Quaternion.identity);
+            
         }
     }
 }
