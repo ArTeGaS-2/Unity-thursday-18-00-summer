@@ -36,14 +36,16 @@ public class PoolsLevelGen : MonoBehaviour
     {
         basePosition = new Vector3(0,7,0);
 
-        // BuildPool();
+        BuildPool();
 
         currentLevelNum = 0;
-        // RecomputeWindow();
+        RecomputeWindow();
     }
     public void SetCurrentLevel(int number)
     {
-
+        if (currentLevelNum == number) return;
+        currentLevelNum = number;
+        RecomputeWindow();
     }
     private void BuildPool()
     {
@@ -55,9 +57,42 @@ public class PoolsLevelGen : MonoBehaviour
             free.Push(go); // Додає до стеку(в кінець)
         }
     }
+    // Головна логіка вікна рівнів
     private void RecomputeWindow()
     {
+        int half = poolCapacity / 2; // Рахує половину пула рівнів
 
+        // Верхня межа не вище 0
+        topLevelNum = Mathf.Min(0 , currentLevelNum + half);
+        // Низ так, щоб у сумі було рівно poolCapacity рівнів
+        bottomLevelNum = topLevelNum - poolCapacity;
+
+        // Виводимо з активних ті, що вийшли за межі
+        var toRelease = new List<int>();
+        foreach (var kv in activeByLevel) // перебір всих активних рівнів
+        {
+            int lvl = kv.Key; // пара ключ-значення, за кожним ключем - рівень
+            if (lvl < bottomLevelNum || lvl > topLevelNum || lvl == 0)
+                toRelease.Add(lvl);
+        }
+        foreach (int lvl in toRelease) ReleaseLevel(lvl); // Активація
+
+        // Заповнюємо діапазон
+        for (int lvl = bottomLevelNum; lvl <= topLevelNum; lvl++)
+        {
+            if (lvl == 0) continue; // Нульовий лишається не використаним
+            if (activeByLevel.ContainsKey(lvl)) continue; // Перевіряє наявність
+
+            if (free.Count == 0)
+            {
+                int far = FindFarthestActiveFrom(currentLevelNum);
+                if (far != int.MaxValue) ReleaseLevel(far);
+            }
+
+            var go = free.Pop(); // Дістає елемент зі стеку
+            PlaceAndInit(go, lvl);
+            activeByLevel[lvl] = go;
+        }
     }
     private void PlaceAndInit(GameObject go, int levelNumber)
     {

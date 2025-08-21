@@ -2222,6 +2222,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1049354663}
   - component: {fileID: 1049354662}
+  - component: {fileID: 1049354664}
   m_Layer: 0
   m_Name: LevelGenerator
   m_TagString: Untagged
@@ -2236,7 +2237,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1049354661}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b7edc89a4957aa44ab23e9351def2364, type: 3}
   m_Name: 
@@ -2249,6 +2250,7 @@ MonoBehaviour:
   zeroLevelWalls: {fileID: 411582611}
   levelWallsPrefab: {fileID: 8361757617462399858, guid: b073692f5a614b644b486454bf0f12fd,
     type: 3}
+  wallNum: 0
   wallsHeightStep: 10
   levelsNumToGenerate: 10
 --- !u!4 &1049354663
@@ -2266,6 +2268,26 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1049354664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1049354661}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a6e6c21b9cc60494180439709232be17, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Instance: {fileID: 0}
+  levelPrefab: {fileID: 0}
+  levelHeightStep: 14
+  poolCapacity: 50
+  playerTag: Player
+  currentLevelNum: 0
+  topLevelNum: 0
+  bottomLevelNum: 0
 --- !u!1 &1107591511
 GameObject:
   m_ObjectHideFlags: 0
